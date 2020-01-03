@@ -6,4 +6,13 @@
     <string name="add">Huisdier toevoegen</string>
     <string name="delete">Huisdier verwijderen</string>
     <string name="afmelden">Afmelden</string>
+    <string name="naamDier">Naam </string>
+    <string name="soortDier">Soort</string>
+    <string name="rasDier">Ras</string>
+    <string name="geslachtDier">Geslacht</string>
+    <string name="geboortedatumlDier">Geboortedatum</string>
+    <string name="btngeboortedatumlDier">Kies datum</string>
+    <string name="KleurDier">Kleur</string>
+    <string name="Toevoegen">Toevoegen</string>
+    <string name="Teruggaan">Terug</string>
 </resources>
