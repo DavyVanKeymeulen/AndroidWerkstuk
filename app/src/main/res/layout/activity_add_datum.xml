@@ -4,10 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:layout_gravity="center"
-    tools:context=".addPetActivity">
-
+    tools:context=".addDatumActivity">
     <ScrollView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content">
@@ -17,52 +14,23 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_gravity="center">
-
             <EditText
-                android:id="@+id/edtNaam"
+                android:id="@+id/edtAgendapunt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:hint="@string/naamDier" />
-
-            <EditText
-                android:id="@+id/edtSoort"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:hint="@string/soortDier" />
-
-            <EditText
-                android:id="@+id/edtRas"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:hint="@string/rasDier"/>
-
-            <EditText
-                android:id="@+id/edtSex"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:hint="@string/geslachtDier" />
-
-            <EditText
-                android:id="@+id/edtKleur"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:hint="@string/KleurDier" />
+                android:hint="@string/agendapunt"/>
 
             <TextView
                 android:id="@+id/txtDatum"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/geboortedatumlDier"
+                android:text="@string/Datum"
                 android:textSize="20sp"
-                tools:text="@string/geboortedatumlDier" />
+                tools:text="@string/Datum" />
 
             <Button
-                android:id="@+id/btn_geboortedatum"
+                android:id="@+id/btn_datum"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/btndatum" />
@@ -71,9 +39,8 @@
                 android:id="@+id/btn_dier"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="addDier"
+                android:onClick="addDatum"
                 android:text="@string/Toevoegen" />
-
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

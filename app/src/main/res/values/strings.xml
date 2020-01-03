@@ -11,8 +11,12 @@
     <string name="rasDier">Ras</string>
     <string name="geslachtDier">Geslacht</string>
     <string name="geboortedatumlDier">Geboortedatum</string>
-    <string name="btngeboortedatumlDier">Kies datum</string>
+    <string name="btndatum">Kies datum</string>
     <string name="KleurDier">Kleur</string>
     <string name="Toevoegen">Toevoegen</string>
     <string name="Teruggaan">Terug</string>
+    <string name="addDatum">Datum toevoegen</string>
+    <string name="deleteDatum">Datum verwijderen</string>
+    <string name="agendapunt">agendapunt</string>
+    <string name="Datum">Datum</string>
 </resources>

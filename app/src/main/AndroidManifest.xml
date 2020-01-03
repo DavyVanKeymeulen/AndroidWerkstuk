@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".addPetActivity"></activity>
+        <activity android:name=".addDatumActivity"></activity>
+        <activity android:name=".PetActivity" />
+        <activity android:name=".addPetActivity" />
         <activity android:name=".PetListActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>

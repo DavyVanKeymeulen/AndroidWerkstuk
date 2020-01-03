@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PetActivity">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/txtNaam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/naamDier"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/txtSoort"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/soortDier"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/txtRas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/rasDier"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/txtSex"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/geslachtDier"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/txtKleur"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/KleurDier"
+                android:textSize="20sp"
+                tools:text="@string/KleurDier" />
+
+            <TextView
+                android:id="@+id/txtDatum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/geboortedatumlDier"
+                android:textSize="20sp"
+                tools:text="@string/geboortedatumlDier" />
+
+            <ListView
+                android:id="@+id/datumslist"
+                android:layout_width="match_parent"
+                android:layout_height="281dp"
+                android:layout_alignParentTop="true" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
