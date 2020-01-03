@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">vertaaldInEngels;)</string>
+    <string name="Datum">Date</string>
+    <string name="KleurDier">Color</string>
+    <string name="Teruggaan">Back</string>
+    <string name="Toevoegen">Add</string>
+    <string name="add">Add pet</string>
+    <string name="addDatum">Add date</string>
+    <string name="afmelden">Log out</string>
+    <string name="agendapunt">Agenda point</string>
+    <string name="btndatum">Pick Date</string>
+    <string name="delete">Delete pet</string>
+    <string name="deleteDatum">Delete date</string>
+    <string name="geboortedatumlDier">Birthdate</string>
+    <string name="geslachtDier">Sex</string>
+    <string name="login">Login</string>
+    <string name="naamDier">Name</string>
+    <string name="password">Password</string>
+    <string name="rasDier">Race</string>
+    <string name="username">Username</string>
+    <string name="soortDier">Species</string>
+</resources>
