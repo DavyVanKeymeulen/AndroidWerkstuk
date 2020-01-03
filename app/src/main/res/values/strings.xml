@@ -3,4 +3,7 @@
     <string name="username">Username</string>
     <string name="password">Wachtwoord</string>
     <string name="login">Aanmelden</string>
+    <string name="add">Huisdier toevoegen</string>
+    <string name="delete">Huisdier verwijderen</string>
+    <string name="afmelden">Afmelden</string>
 </resources>
