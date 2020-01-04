@@ -5,20 +5,23 @@ import androidx.room.Entity;
 import androidx.room.ForeignKey;
 import androidx.room.PrimaryKey;
 
-@Entity
+@Entity (tableName = "agendaPunt_table")
 public class AgendaPunt {
     @PrimaryKey(autoGenerate=true)
-    @ColumnInfo(name="id")
-    public int id;
+    private int id;
 
-    @ColumnInfo(name="animalId")
-    public int animalId;
+    @ColumnInfo(name="animal_id")
+    private int animalId;
 
-    @ColumnInfo(name = "info")
-    public String info;
+    private String info;
 
-    @ColumnInfo(name = "datum")
-    public String datum;
+    private String datum;
+
+    public AgendaPunt(int animalId, String info, String datum) {
+        this.animalId = animalId;
+        this.info = info;
+        this.datum = datum;
+    }
 
     public int getId() {
         return id;

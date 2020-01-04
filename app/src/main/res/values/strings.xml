@@ -4,7 +4,7 @@
     <string name="password">Wachtwoord</string>
     <string name="login">Aanmelden</string>
     <string name="add">Huisdier toevoegen</string>
-    <string name="delete">Huisdier verwijderen</string>
+    <string name="delete">Alle Huisdieren verwijderen</string>
     <string name="afmelden">Afmelden</string>
     <string name="naamDier">Naam </string>
     <string name="soortDier">Soort</string>
@@ -16,7 +16,7 @@
     <string name="Toevoegen">Toevoegen</string>
     <string name="Teruggaan">Terug</string>
     <string name="addDatum">Datum toevoegen</string>
-    <string name="deleteDatum">Datum verwijderen</string>
+    <string name="deleteDatum">Alle datums verwijderen</string>
     <string name="agendapunt">agendapunt</string>
     <string name="Datum">Datum</string>
 </resources>

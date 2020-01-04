@@ -4,32 +4,35 @@ import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
-@Entity
+@Entity(tableName = "animal_table")
 public class Animal {
     @PrimaryKey(autoGenerate=true)
-    @ColumnInfo(name="id")
-    public int id;
+    private int id;
 
-    @ColumnInfo(name="userid")
-    public int userid;
+    @ColumnInfo(name="user_id")
+    private int userid;
 
-    @ColumnInfo(name = "naam")
-    public String naam;
+    private String naam;
 
-    @ColumnInfo(name = "soort")
-    public String soort;
+    private String soort;
 
-    @ColumnInfo(name = "ras")
-    public String ras;
+    private String ras;
 
-    @ColumnInfo(name = "geslacht")
-    public String geslacht;
+    private String geslacht;
 
-    @ColumnInfo(name = "kleur")
-    public String kleur;
+    private String kleur;
 
-    @ColumnInfo(name = "geboortedatum")
-    public String geboortedatum;
+    private String geboortedatum;
+
+    public Animal(int userid, String naam, String soort, String ras, String geslacht, String kleur, String geboortedatum) {
+        this.userid = userid;
+        this.naam = naam;
+        this.soort = soort;
+        this.ras = ras;
+        this.geslacht = geslacht;
+        this.kleur = kleur;
+        this.geboortedatum = geboortedatum;
+    }
 
     public int getId() {
         return id;

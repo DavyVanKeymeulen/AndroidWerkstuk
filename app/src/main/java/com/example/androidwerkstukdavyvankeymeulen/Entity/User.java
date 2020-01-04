@@ -5,17 +5,19 @@ import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
 
-@Entity
+@Entity(tableName = "user_table")
 public class User {
     @PrimaryKey(autoGenerate=true)
-    @ColumnInfo(name="id")
-    public int id;
+    private int id;
 
-    @ColumnInfo(name = "username")
-    public String username;
+    private String username;
 
-    @ColumnInfo(name = "password")
-    public String password;
+    private String password;
+
+    public User(String username, String password) {
+        this.username = username;
+        this.password = password;
+    }
 
     public int getId() {
         return id;

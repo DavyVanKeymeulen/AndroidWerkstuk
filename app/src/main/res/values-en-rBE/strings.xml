@@ -10,8 +10,8 @@
     <string name="afmelden">Log out</string>
     <string name="agendapunt">Agenda point</string>
     <string name="btndatum">Pick Date</string>
-    <string name="delete">Delete pet</string>
-    <string name="deleteDatum">Delete date</string>
+    <string name="delete">Delete all pets</string>
+    <string name="deleteDatum">Delete all dates</string>
     <string name="geboortedatumlDier">Birthdate</string>
     <string name="geslachtDier">Sex</string>
     <string name="login">Login</string>
