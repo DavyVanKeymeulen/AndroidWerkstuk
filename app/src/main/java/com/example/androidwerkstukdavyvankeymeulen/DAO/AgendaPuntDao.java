@@ -13,6 +13,7 @@ import java.util.List;
 
 @Dao
 public interface AgendaPuntDao {
+
     @Query("SELECT * from agendapunt_table")
     LiveData<List<AgendaPunt>> getAll();
 
@@ -24,6 +25,9 @@ public interface AgendaPuntDao {
 
     @Delete
     void deleteAgendaPunt(AgendaPunt agendaPunt);
+
+    @Query("delete from agendaPunt_table")
+    void deleteAllAgendaPunt();
 
 
 }
