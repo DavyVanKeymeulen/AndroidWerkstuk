@@ -16,12 +16,14 @@ public class PetActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pet);
     }
+    //menu creeren en aanroepen
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.petmenu,menu);
         return true;
     }
+    //listener voor als er op de mennu geduwdt wordt.
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {

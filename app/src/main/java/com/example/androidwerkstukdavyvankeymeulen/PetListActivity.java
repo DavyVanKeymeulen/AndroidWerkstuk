@@ -19,6 +19,7 @@ import java.util.ArrayList;
 public class PetListActivity extends AppCompatActivity {
 
     ListView listView;
+    //listviex invullen en adapter voor schrijbven
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,6 +42,7 @@ public class PetListActivity extends AppCompatActivity {
             }
         });
     }
+    //menu creeren en aanroepen
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -48,6 +50,7 @@ public class PetListActivity extends AppCompatActivity {
         inflater.inflate(R.menu.lijstmenu,menu);
         return true;
     }
+    //listener voor als er op de mennu geduwdt wordt.
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {

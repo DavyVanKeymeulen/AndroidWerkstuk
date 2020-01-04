@@ -24,7 +24,7 @@ public class addDatumActivity extends AppCompatActivity {
     DatePickerDialog datePickerDialog;
 
 
-
+    //voor calender
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -53,16 +53,22 @@ public class addDatumActivity extends AppCompatActivity {
         });
     }
 
+    //stappen die moeten gebeuren na klikken van add datum
     public void addDatum(View view)
     {
         //datum toevoegen
+
+        //functie aanroepen voor terug naar andere activity te gaan
         openListActivity();
     }
 
+    //functie voor terug naar andere activity te gaan met intent
     public void openListActivity() {
         Intent intent = new Intent(this, PetListActivity.class);
         startActivity(intent);
     }
+
+    //menu creeren en aanroepen
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
@@ -70,6 +76,7 @@ public class addDatumActivity extends AppCompatActivity {
         return true;
     }
 
+    //listener voor als er op de mennu geduwdt wordt.
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()){

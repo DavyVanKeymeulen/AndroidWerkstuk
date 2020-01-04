@@ -25,6 +25,7 @@ public class addPetActivity extends AppCompatActivity {
     Calendar calendar;
     DatePickerDialog datePickerDialog;
 
+    //voor calender
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -54,24 +55,28 @@ public class addPetActivity extends AppCompatActivity {
             }
         });
     }
+    //stappen die moeten gebeuren na klikken van add dier
     public void addDier(View view)
     {
         //Dier toevoegen
+
+        //functie aanroepen voor terug naar andere activity te gaan
         openListActivity();
     }
+    //functie voor terug naar andere activity te gaan met intent
     public void openListActivity() {
         Intent intent = new Intent(this, PetListActivity.class);
         startActivity(intent);
     }
 
-
+    //menu creeren en aanroepen
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.backmenu,menu);
         return true;
     }
-
+    //listener voor als er op de mennu geduwdt wordt.
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()){
