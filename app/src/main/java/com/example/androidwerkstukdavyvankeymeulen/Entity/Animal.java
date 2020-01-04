@@ -9,8 +9,6 @@ public class Animal {
     @PrimaryKey(autoGenerate=true)
     private int id;
 
-    @ColumnInfo(name="user_id")
-    private int userid;
 
     private String naam;
 
@@ -24,8 +22,7 @@ public class Animal {
 
     private String geboortedatum;
 
-    public Animal(int userid, String naam, String soort, String ras, String geslacht, String kleur, String geboortedatum) {
-        this.userid = userid;
+    public Animal(String naam, String soort, String ras, String geslacht, String kleur, String geboortedatum) {
         this.naam = naam;
         this.soort = soort;
         this.ras = ras;

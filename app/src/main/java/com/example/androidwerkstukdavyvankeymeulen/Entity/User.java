@@ -1,4 +1,4 @@
-package com.example.androidwerkstukdavyvankeymeulen.Entity;
+/*package com.example.androidwerkstukdavyvankeymeulen.Entity;
 
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
@@ -43,3 +43,4 @@ public class User {
         this.password = password;
     }
 }
+*/

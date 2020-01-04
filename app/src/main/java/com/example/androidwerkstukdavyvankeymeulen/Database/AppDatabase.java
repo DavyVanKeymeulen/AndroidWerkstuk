@@ -11,17 +11,16 @@ import androidx.sqlite.db.SupportSQLiteDatabase;
 
 import com.example.androidwerkstukdavyvankeymeulen.DAO.AgendaPuntDao;
 import com.example.androidwerkstukdavyvankeymeulen.DAO.AnimalDao;
-import com.example.androidwerkstukdavyvankeymeulen.DAO.UserDao;
+
 import com.example.androidwerkstukdavyvankeymeulen.Entity.AgendaPunt;
 import com.example.androidwerkstukdavyvankeymeulen.Entity.Animal;
-import com.example.androidwerkstukdavyvankeymeulen.Entity.User;
 
-@Database(entities={User.class, Animal.class, AgendaPunt.class},version = 1)
+
+@Database(entities={ Animal.class, AgendaPunt.class},version = 1)
 public abstract class AppDatabase extends RoomDatabase {
 
     private static AppDatabase instance;
 
-    public abstract UserDao userDao();
     public abstract AnimalDao animalDao();
     public abstract AgendaPuntDao agendaPuntDao();
 
@@ -50,9 +49,9 @@ public abstract class AppDatabase extends RoomDatabase {
         }
         @Override
         protected Void doInBackground(Void... voids) {
-            animalDao.insertAnimal(new Animal(1,"Suske","kat","straatkat","female","strepen","07/08/2019"));
-            animalDao.insertAnimal(new Animal(1,"Wiske","kat","straatkat","female","strepen","07/08/2019"));
-            animalDao.insertAnimal(new Animal(1,"Djanko","Hond","chiuauaua","male","wit","07/08/2017"));
+            animalDao.insertAnimal(new Animal("Suske","kat","straatkat","female","strepen","07/08/2019"));
+            animalDao.insertAnimal(new Animal("Wiske","kat","straatkat","female","strepen","07/08/2019"));
+            animalDao.insertAnimal(new Animal("Djanko","Hond","chiuauaua","male","wit","07/08/2017"));
             return null;
         }
     }

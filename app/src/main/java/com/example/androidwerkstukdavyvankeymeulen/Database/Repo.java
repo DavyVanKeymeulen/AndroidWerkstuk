@@ -7,14 +7,12 @@ import androidx.lifecycle.LiveData;
 
 import com.example.androidwerkstukdavyvankeymeulen.DAO.AgendaPuntDao;
 import com.example.androidwerkstukdavyvankeymeulen.DAO.AnimalDao;
-import com.example.androidwerkstukdavyvankeymeulen.DAO.UserDao;
 import com.example.androidwerkstukdavyvankeymeulen.Entity.AgendaPunt;
 import com.example.androidwerkstukdavyvankeymeulen.Entity.Animal;
 
 import java.util.List;
 
 public class Repo {
-    private UserDao userDao;
     private AgendaPuntDao agendaPuntDao;
     private LiveData<List<AgendaPunt>> allAgendaPunt;
     private AnimalDao animalDao;

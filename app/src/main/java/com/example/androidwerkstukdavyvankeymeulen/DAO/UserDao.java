@@ -1,4 +1,4 @@
-package com.example.androidwerkstukdavyvankeymeulen.DAO;
+/*package com.example.androidwerkstukdavyvankeymeulen.DAO;
 
 import androidx.lifecycle.LiveData;
 import androidx.room.Dao;
@@ -26,3 +26,4 @@ public interface UserDao {
     void deleteUser(User user);
 
 }
+*/

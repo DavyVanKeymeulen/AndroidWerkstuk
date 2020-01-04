@@ -42,7 +42,7 @@ dependencies {
 
     //room components
     implementation "androidx.room:room-runtime:$room_version"
-   // annotationProcessor "androidx.room:room-compiler:$room_version"
+    annotationProcessor "androidx.room:room-compiler:$room_version"
 
     // Livecycle components
     implementation "androidx.lifecycle:lifecycle-extensions:$lifecycle_version"
