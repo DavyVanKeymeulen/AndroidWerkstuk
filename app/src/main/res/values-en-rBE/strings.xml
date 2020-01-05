@@ -23,4 +23,5 @@
     <string name="controle">Fill in everything!</string>
     <string name="niet_opgeslaan">Animal not saved</string>
     <string name="opgeslaan">Animal saved</string>
+    <string name="alldelete">all pets deleted</string>
 </resources>

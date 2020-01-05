@@ -39,9 +39,14 @@ public class lijstAdapter extends RecyclerView.Adapter <lijstAdapter.lijstHolder
     public int getItemCount() {
         return animals.size();
     }
+
     public void setAnimals(List<Animal> animals){
         this.animals=animals;
         notifyDataSetChanged();
+    }
+
+    public Animal getAnimalAt(int pos){
+        return animals.get(pos);
     }
 
     class lijstHolder extends RecyclerView.ViewHolder{

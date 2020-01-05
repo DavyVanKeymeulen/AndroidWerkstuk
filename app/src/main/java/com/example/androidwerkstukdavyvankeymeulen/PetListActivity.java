@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.lifecycle.ViewModelProviders;
+import androidx.recyclerview.widget.ItemTouchHelper;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -55,7 +56,18 @@ public class PetListActivity extends AppCompatActivity {
             }
         });
 
+        new ItemTouchHelper(new ItemTouchHelper.SimpleCallback(0,
+                ItemTouchHelper.LEFT) {
+            @Override
+            public boolean onMove(@NonNull RecyclerView recyclerView, @NonNull RecyclerView.ViewHolder viewHolder, @NonNull RecyclerView.ViewHolder target) {
+                return false;
+            }
 
+            @Override
+            public void onSwiped(@NonNull RecyclerView.ViewHolder viewHolder, int direction) {
+                animalViewModel.delete(lijstAdapter.getAnimalAt(viewHolder.getAdapterPosition()));
+            }
+        }).attachToRecyclerView(recyclerView);
     }
 
     //menu creeren en aanroepen
@@ -81,7 +93,9 @@ public class PetListActivity extends AppCompatActivity {
                 startActivityForResult(intent2,ADD_ANIMAL_REQUEST);
                 return true;
             case R.id.nav_delete:
-                //verwijderen
+                animalViewModel.deleteAll();
+                Toast.makeText(this,"@string/alldelete",Toast.LENGTH_SHORT).show();
+
                 return true;
             default:
                 return super.onOptionsItemSelected(item);

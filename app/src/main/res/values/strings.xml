@@ -22,4 +22,5 @@
     <string name="controle">Alles invullen!</string>
     <string name="opgeslaan">Dier opgeslaan</string>
     <string name="niet_opgeslaan">Dier niet opgeslaan</string>
+    <string name="alldelete">alle dieren verwijderd</string>
 </resources>
