@@ -1,6 +1,7 @@
 package com.example.androidwerkstukdavyvankeymeulen;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
@@ -27,6 +28,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class PetListActivity extends AppCompatActivity {
+    public static final int ADD_ANIMAL_REQUEST =1;
+
     private AnimalViewModel animalViewModel;
 
     ListView listView;
@@ -35,6 +38,7 @@ public class PetListActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pet_list);
+
 
         RecyclerView recyclerView = findViewById(R.id.recycler_view);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
@@ -74,13 +78,35 @@ public class PetListActivity extends AppCompatActivity {
             case R.id.nav_add:
                 //add -> nieuwe activity
                 Intent intent2 = new Intent(this, addPetActivity.class);
-                startActivity(intent2);
+                startActivityForResult(intent2,ADD_ANIMAL_REQUEST);
                 return true;
             case R.id.nav_delete:
                 //verwijderen
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
+
+        }
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if(requestCode==ADD_ANIMAL_REQUEST && resultCode == RESULT_OK){
+            String naam =data.getStringExtra(addPetActivity.Extra_NAAM);
+            String soort =data.getStringExtra(addPetActivity.Extra_Soort);
+            String ras =data.getStringExtra(addPetActivity.Extra_Ras);
+            String sex =data.getStringExtra(addPetActivity.Extra_Sex);
+            String kleur =data.getStringExtra(addPetActivity.Extra_Kleur);
+            String datum =data.getStringExtra(addPetActivity.Extra_Datum);
+
+            Animal animal = new Animal(naam,soort,ras,sex,kleur,datum);
+            animalViewModel.insert(animal);
+
+            Toast.makeText(this,"@string/opgeslaan",Toast.LENGTH_SHORT).show();
+
+        }else{
+            Toast.makeText(this,"@string/niet_opgeslaan",Toast.LENGTH_SHORT).show();
 
         }
     }

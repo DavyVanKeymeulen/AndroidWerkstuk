@@ -12,7 +12,8 @@
         <activity android:name=".addDatumActivity"></activity>
         <activity android:name=".PetActivity" />
         <activity android:name=".addPetActivity" />
-        <activity android:name=".PetListActivity" />
+        <activity android:name=".PetListActivity"
+            android:launchMode="singleTop"/>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

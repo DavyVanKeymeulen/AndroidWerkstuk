@@ -12,7 +12,7 @@
     <string name="btndatum">Pick Date</string>
     <string name="delete">Delete all pets</string>
     <string name="deleteDatum">Delete all dates</string>
-    <string name="geboortedatumlDier">Birthdate</string>
+    <string name="geboortedatumlDier">Birthdate:</string>
     <string name="geslachtDier">Sex</string>
     <string name="login">Login</string>
     <string name="naamDier">Name</string>
@@ -20,4 +20,7 @@
     <string name="rasDier">Race</string>
     <string name="username">Username</string>
     <string name="soortDier">Species</string>
+    <string name="controle">Fill in everything!</string>
+    <string name="niet_opgeslaan">Animal not saved</string>
+    <string name="opgeslaan">Animal saved</string>
 </resources>

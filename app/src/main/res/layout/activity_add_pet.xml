@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:layout_gravity="center"
+    android:padding="20dp"
     tools:context=".addPetActivity">
 
     <ScrollView
@@ -15,43 +15,47 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_gravity="center">
+            android:orientation="vertical">
 
             <EditText
                 android:id="@+id/edtNaam"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:hint="@string/naamDier" />
+                android:hint="@string/naamDier"
+                android:inputType="text"/>
 
             <EditText
                 android:id="@+id/edtSoort"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:hint="@string/soortDier" />
+                android:hint="@string/soortDier"
+                android:inputType="text"/>
 
             <EditText
                 android:id="@+id/edtRas"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:hint="@string/rasDier"/>
+                android:hint="@string/rasDier"
+                android:inputType="text"/>
 
             <EditText
                 android:id="@+id/edtSex"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:hint="@string/geslachtDier" />
+                android:hint="@string/geslachtDier"
+                android:inputType="text"/>
 
             <EditText
                 android:id="@+id/edtKleur"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:hint="@string/KleurDier" />
+                android:hint="@string/KleurDier"
+                android:inputType="text"/>
 
             <TextView
                 android:id="@+id/txtDatum"

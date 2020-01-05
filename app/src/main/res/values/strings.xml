@@ -10,7 +10,7 @@
     <string name="soortDier">Soort</string>
     <string name="rasDier">Ras</string>
     <string name="geslachtDier">Geslacht</string>
-    <string name="geboortedatumlDier">Geboortedatum</string>
+    <string name="geboortedatumlDier">Geboortedatum:</string>
     <string name="btndatum">Kies datum</string>
     <string name="KleurDier">Kleur</string>
     <string name="Toevoegen">Toevoegen</string>
@@ -19,4 +19,7 @@
     <string name="deleteDatum">Alle datums verwijderen</string>
     <string name="agendapunt">agendapunt</string>
     <string name="Datum">Datum</string>
+    <string name="controle">Alles invullen!</string>
+    <string name="opgeslaan">Dier opgeslaan</string>
+    <string name="niet_opgeslaan">Dier niet opgeslaan</string>
 </resources>
