@@ -27,4 +27,6 @@
     <string name="editPet">Dier Wijzigen</string>
     <string name="kan_niet">Dier kan  nier gewijzigd worden</string>
     <string name="gewijziged">Dier gewijziged</string>
+    <string name="registreren">registreren</string>
+    <string name="hello_blank_fragment">Hello  fragment</string>
 </resources>

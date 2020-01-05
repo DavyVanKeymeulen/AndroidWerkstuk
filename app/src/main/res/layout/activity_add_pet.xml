@@ -23,7 +23,7 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:hint="@string/naamDier"
-                android:inputType="text"/>
+                android:inputType="text" />
 
             <EditText
                 android:id="@+id/edtSoort"
@@ -31,7 +31,7 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:hint="@string/soortDier"
-                android:inputType="text"/>
+                android:inputType="text" />
 
             <EditText
                 android:id="@+id/edtRas"
@@ -39,7 +39,7 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:hint="@string/rasDier"
-                android:inputType="text"/>
+                android:inputType="text" />
 
             <EditText
                 android:id="@+id/edtSex"
@@ -47,7 +47,7 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:hint="@string/geslachtDier"
-                android:inputType="text"/>
+                android:inputType="text" />
 
             <EditText
                 android:id="@+id/edtKleur"
@@ -55,7 +55,7 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:hint="@string/KleurDier"
-                android:inputType="text"/>
+                android:inputType="text" />
 
             <TextView
                 android:id="@+id/txtDatum"

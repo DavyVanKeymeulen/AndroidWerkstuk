@@ -27,4 +27,6 @@
     <string name="editPet">Edit Pet</string>
     <string name="kan_niet">Pet can\'t be updated</string>
     <string name="gewijziged">Pet updated</string>
+    <string name="registreren">registrerer</string>
+    <string name="hello_blank_fragment">Hello  fragment</string>
 </resources>

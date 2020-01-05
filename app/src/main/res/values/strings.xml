@@ -28,4 +28,7 @@
     <string name="kan_niet">Dier kan  nier gewijzigd worden</string>
     <string name="gewijziged">Dier gewijziged</string>
 
+    <string name="hello_blank_fragment">Hello  fragment</string>
+    <string name="registreren">registreren</string>
+
 </resources>
