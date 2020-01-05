@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="20dp"
-    tools:context=".addPetActivity">
+    tools:context=".addEditPetActivity">
 
     <ScrollView
         android:layout_width="fill_parent"

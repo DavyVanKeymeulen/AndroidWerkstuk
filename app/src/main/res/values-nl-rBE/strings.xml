@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Datum">Datum</string>
+    <string name="KleurDier">Kleur</string>
+    <string name="Teruggaan">Terug</string>
+    <string name="Toevoegen">Toevoegen</string>
+    <string name="add">Huisdier toevoegen</string>
+    <string name="addDatum">Datum toevoegen</string>
+    <string name="afmelden">Afmelden</string>
+    <string name="agendapunt">agendapunt</string>
+    <string name="alldelete">alle dieren verwijderd</string>
+    <string name="btndatum">Kies datum</string>
+    <string name="controle">Alles invullen!</string>
+    <string name="delete">Alle Huisdieren verwijderen</string>
+    <string name="deleteDatum">Alle datums verwijderen</string>
+    <string name="geboortedatumlDier">Geboortedatum:</string>
+    <string name="geslachtDier">Geslacht</string>
+    <string name="login">Aanmelden</string>
+    <string name="naamDier">"Naam "</string>
+    <string name="niet_opgeslaan">Dier niet opgeslaan</string>
+    <string name="opgeslaan">Dier opgeslaan</string>
+    <string name="password">Wachtwoord</string>
+    <string name="rasDier">Ras</string>
+    <string name="soortDier">Soort</string>
+    <string name="username">Username</string>
+    <string name="addPet">Dier toevoegen</string>
+    <string name="editPet">Dier Wijzigen</string>
+    <string name="kan_niet">Dier kan  nier gewijzigd worden</string>
+    <string name="gewijziged">Dier gewijziged</string>
+</resources>

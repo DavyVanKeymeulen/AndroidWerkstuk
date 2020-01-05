@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">vertaaldInEngels;)</string>
     <string name="Datum">Date</string>
     <string name="KleurDier">Color</string>
     <string name="Teruggaan">Back</string>
@@ -24,4 +23,8 @@
     <string name="niet_opgeslaan">Animal not saved</string>
     <string name="opgeslaan">Animal saved</string>
     <string name="alldelete">all pets deleted</string>
+    <string name="addPet">Add Pet</string>
+    <string name="editPet">Edit Pet</string>
+    <string name="kan_niet">Pet can\'t be updated</string>
+    <string name="gewijziged">Pet updated</string>
 </resources>

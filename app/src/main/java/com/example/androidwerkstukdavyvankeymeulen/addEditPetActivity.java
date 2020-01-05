@@ -18,7 +18,9 @@ import android.widget.Toast;
 
 import java.util.Calendar;
 
-public class addPetActivity extends AppCompatActivity {
+public class addEditPetActivity extends AppCompatActivity {
+    public static final String Extra_ID=
+            "com.example.androidwerkstukdavyvankeymeulen.Extra_ID";
     public static final String Extra_NAAM=
     "com.example.androidwerkstukdavyvankeymeulen.Extra_NAAM";
     public static final String Extra_Soort=
@@ -59,8 +61,7 @@ public class addPetActivity extends AppCompatActivity {
         textView = (TextView) findViewById(R.id.txtDatum);
         button = (Button) findViewById(R.id.btn_geboortedatum);
         //standaardwaarde
-        textView.setText(" ");
-
+        textView.setText("");
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -70,7 +71,7 @@ public class addPetActivity extends AppCompatActivity {
                 int maand = calendar.get(Calendar.MONTH);
                 int jaar = calendar.get(Calendar.YEAR);
 
-                datePickerDialog = new DatePickerDialog(addPetActivity.this, new DatePickerDialog.OnDateSetListener() {
+                datePickerDialog = new DatePickerDialog(addEditPetActivity.this, new DatePickerDialog.OnDateSetListener() {
                     @Override
                     public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
                         textView.setText(dayOfMonth + "/" + (month + 1) + "/" + year);
@@ -82,6 +83,23 @@ public class addPetActivity extends AppCompatActivity {
 
             }
         });
+
+        Intent intent = getIntent();
+        if (intent.hasExtra(Extra_ID)){
+            setTitle(getResources().getString(R.string.editPet));
+            editTextNaam.setText(intent.getStringExtra(Extra_NAAM));
+            editTextSoort.setText(intent.getStringExtra(Extra_Soort));
+            editTextRas.setText(intent.getStringExtra(Extra_Ras));
+            editTextSex.setText(intent.getStringExtra(Extra_Sex));
+            editTextKleur.setText(intent.getStringExtra(Extra_Kleur));
+            textView.setText(intent.getStringExtra(Extra_Datum));
+        }else{
+            setTitle(getResources().getString(R.string.addPet));
+        }
+
+
+
+
     }
 
     //stappen die moeten gebeuren na klikken van add dier
@@ -94,7 +112,7 @@ public class addPetActivity extends AppCompatActivity {
         String datum = textView.getText().toString();
 
         if(naam.trim().isEmpty() || soort.trim().isEmpty() || ras.trim().isEmpty() ||sex.trim().isEmpty() ||kleur.trim().isEmpty() || datum.trim().isEmpty()){
-           Toast.makeText(this,"@string/controle",Toast.LENGTH_SHORT).show();
+           Toast.makeText(this,getResources().getString(R.string.controle),Toast.LENGTH_SHORT).show();
            return;
         }
 
@@ -106,10 +124,14 @@ public class addPetActivity extends AppCompatActivity {
         data.putExtra(Extra_Kleur,kleur);
         data.putExtra(Extra_Datum,datum);
 
+        int id=getIntent().getIntExtra(Extra_ID,-1);
+
+        if(id!=-1){
+            data.putExtra(Extra_ID, data);
+        }
+
         setResult(RESULT_OK, data);
         finish();
-        //functie aanroepen voor terug naar andere activity te gaan
-        openListActivity();
     }
 
     //functie voor terug naar andere activity te gaan met intent

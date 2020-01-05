@@ -3,6 +3,7 @@ package com.example.androidwerkstukdavyvankeymeulen.Recycler;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -18,6 +19,7 @@ import java.util.List;
 
 public class lijstAdapter extends RecyclerView.Adapter <lijstAdapter.lijstHolder> {
     private List<Animal> animals = new ArrayList<>();
+    private OnItemClickListener listener;
 
     @NonNull
     @Override
@@ -59,7 +61,24 @@ public class lijstAdapter extends RecyclerView.Adapter <lijstAdapter.lijstHolder
             textViewNaam = itemView.findViewById(R.id.text_view_naam);
             textViewSoort = itemView.findViewById(R.id.text_view_soort);
             textViewDatum = itemView.findViewById(R.id.text_view_geboortedatum);
+
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    int pos = getAdapterPosition();
+                    if (listener != null && pos != RecyclerView.NO_POSITION){
+                        listener.onItemClick(animals.get(pos));
+                    }
+                }
+            });
         }
+    }
+    public interface OnItemClickListener{
+        void onItemClick(Animal animal);
+    }
+
+    public void setOnItemClickListener(OnItemClickListener  listener){
+        this.listener = listener;
     }
 
 }

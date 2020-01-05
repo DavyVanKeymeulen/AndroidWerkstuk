@@ -31,4 +31,13 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, PetListActivity.class);
         startActivity(intent);
     }
+
+    public boolean emailVal(String mail){
+        if(mail=="mail"){
+            return true;
+        }
+        return false;
+
+    }
+
 }
